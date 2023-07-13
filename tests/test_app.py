@@ -44,7 +44,8 @@ def test_post_albums_with_no_data(db_connection, web_client):
     get_response = web_client.get("/albums")
     assert get_response.status_code == 200
     assert get_response.data.decode('utf-8') == "" \
-        "Album(The Cold Nose, 2009, 1)"
+        "Album(The Cold Nose, 2009, 1)"   
+
 
 
 #Scenario 1
